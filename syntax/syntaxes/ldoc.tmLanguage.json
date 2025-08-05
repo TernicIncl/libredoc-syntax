@@ -1,70 +1,70 @@
 {
-  "scopeName": "source.mydocs",
+  "scopeName": "source.ldoc",
   "patterns": [
     {
-      "name": "comment.line.double-slash.mydocs",
+      "name": "comment.line.double-slash.ldoc",
       "match": "//.*$"
     },
     {
-      "name": "markup.heading.1.mydocs",
+      "name": "markup.heading.1.ldoc",
       "match": "^# (.+)$"
     },
     {
-      "name": "markup.heading.2.mydocs",
+      "name": "markup.heading.2.ldoc",
       "match": "^## (.+)$"
     },
     {
-      "name": "markup.heading.3.mydocs",
+      "name": "markup.heading.3.ldoc",
       "match": "^### (.+)$"
     },
     {
-      "name": "keyword.control.mydocs",
+      "name": "keyword.control.ldoc",
       "match": "^\\s*@\\w+"
     },
     {
-      "name": "markup.fenced-code-block.mydocs",
+      "name": "markup.fenced-code-block.ldoc",
       "begin": "^```(\\w*)\\s*$",
       "beginCaptures": {
-        "1": { "name": "storage.type.code.mydocs" }
+        "1": { "name": "storage.type.code.ldoc" }
       },
       "end": "^```\\s*$",
       "patterns": [
         {
-          "name": "source.code.mydocs",
+          "name": "source.code.ldoc",
           "match": "[\\s\\S]*"
         }
       ]
     },
     {
-      "name": "markup.inline.code.mydocs",
+      "name": "markup.inline.code.ldoc",
       "match": "`([^`]+)`"
     },
     {
-      "name": "markup.list.ordered.mydocs",
+      "name": "markup.list.ordered.ldoc",
       "match": "^\\s*\\d+\\.\\s+(.+)$"
     },
     {
-      "name": "markup.list.unordered.mydocs",
+      "name": "markup.list.unordered.ldoc",
       "match": "^\\s*[-*+]\\s+(.+)$"
     },
     {
-      "name": "markup.list.task.mydocs",
+      "name": "markup.list.task.ldoc",
       "match": "^\\s*- \\[([ xX])\\] (.+)$"
     },
     {
-      "name": "markup.underline.link.mydocs",
+      "name": "markup.underline.link.ldoc",
       "match": "\\[(.+?)\\]\\((.+?)\\)"
     },
     {
-      "name": "markup.inline.image.mydocs",
+      "name": "markup.inline.image.ldoc",
       "match": "@image: (.+?) \"(.*?)\""
     },
     {
-      "name": "markup.inline.video.mydocs",
+      "name": "markup.inline.video.ldoc",
       "match": "@video: (.+)"
     },
     {
-      "name": "keyword.other.mydocs",
+      "name": "keyword.other.ldoc",
       "match": "^\\s*@\\w+:"
     }
   ],
