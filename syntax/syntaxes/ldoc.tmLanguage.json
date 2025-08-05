@@ -1,0 +1,73 @@
+{
+  "scopeName": "source.mydocs",
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.mydocs",
+      "match": "//.*$"
+    },
+    {
+      "name": "markup.heading.1.mydocs",
+      "match": "^# (.+)$"
+    },
+    {
+      "name": "markup.heading.2.mydocs",
+      "match": "^## (.+)$"
+    },
+    {
+      "name": "markup.heading.3.mydocs",
+      "match": "^### (.+)$"
+    },
+    {
+      "name": "keyword.control.mydocs",
+      "match": "^\\s*@\\w+"
+    },
+    {
+      "name": "markup.fenced-code-block.mydocs",
+      "begin": "^```(\\w*)\\s*$",
+      "beginCaptures": {
+        "1": { "name": "storage.type.code.mydocs" }
+      },
+      "end": "^```\\s*$",
+      "patterns": [
+        {
+          "name": "source.code.mydocs",
+          "match": "[\\s\\S]*"
+        }
+      ]
+    },
+    {
+      "name": "markup.inline.code.mydocs",
+      "match": "`([^`]+)`"
+    },
+    {
+      "name": "markup.list.ordered.mydocs",
+      "match": "^\\s*\\d+\\.\\s+(.+)$"
+    },
+    {
+      "name": "markup.list.unordered.mydocs",
+      "match": "^\\s*[-*+]\\s+(.+)$"
+    },
+    {
+      "name": "markup.list.task.mydocs",
+      "match": "^\\s*- \\[([ xX])\\] (.+)$"
+    },
+    {
+      "name": "markup.underline.link.mydocs",
+      "match": "\\[(.+?)\\]\\((.+?)\\)"
+    },
+    {
+      "name": "markup.inline.image.mydocs",
+      "match": "@image: (.+?) \"(.*?)\""
+    },
+    {
+      "name": "markup.inline.video.mydocs",
+      "match": "@video: (.+)"
+    },
+    {
+      "name": "keyword.other.mydocs",
+      "match": "^\\s*@\\w+:"
+    }
+  ],
+  "repository": {},
+  "patterns": []
+}
