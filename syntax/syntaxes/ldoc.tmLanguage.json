@@ -68,6 +68,5 @@
       "match": "^\\s*@\\w+:"
     }
   ],
-  "repository": {},
-  "patterns": []
+  "repository": {}
 }

@@ -2,7 +2,7 @@
   "name": "ldoc-syntax",
   "displayName": "LDoc Syntax",
   "description": "Syntax highlighting for my custom documentation language",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "AstraVirtual",  
   "engines": {
     "vscode": "^1.70.0"
